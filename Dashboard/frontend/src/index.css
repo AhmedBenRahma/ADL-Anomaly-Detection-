@@ -1,0 +1,25 @@
+﻿@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: 'Plus Jakarta Sans', 'Segoe UI', sans-serif;
+  color-scheme: dark;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background: radial-gradient(circle at 20% 0%, #1b2230 0%, #0f1117 45%);
+  color: #e2e8f0;
+}
+
+* {
+  box-sizing: border-box;
+}

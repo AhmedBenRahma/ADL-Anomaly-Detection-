@@ -1,0 +1,29 @@
+# ---- large data: download REFIT separately, don't commit ----
+*.csv
+REFIT_dataset/
+REFIT_dataset clean/
+Dashboard/backend/data/
+Dashboard/backend/model/
+
+# ---- archives / scratch ----
+*.zip
+*.docx
+avancement*.docx
+
+# ---- python ----
+__pycache__/
+*.pyc
+.venv/
+venv/
+build/
+dist/
+*.egg-info/
+
+# ---- node ----
+node_modules/
+Dashboard/frontend/node_modules/
+Dashboard/frontend/dist/
+
+# ---- os ----
+.DS_Store
+Thumbs.db

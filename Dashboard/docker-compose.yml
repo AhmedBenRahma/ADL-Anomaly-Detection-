@@ -1,0 +1,25 @@
+version: '3.9'
+
+services:
+  backend:
+    build: ./backend
+    container_name: elderly-monitor-backend
+    ports:
+      - '8000:8000'
+    # Shared model volume mounted from host so runtime artifacts stay in sync.
+    volumes:
+      - ./backend/model:/app/backend/model
+      - ./backend/data:/app/backend/data
+    command: uvicorn main:app --host 0.0.0.0 --port 8000
+
+  frontend:
+    build: ./frontend
+    container_name: elderly-monitor-frontend
+    ports:
+      - '5173:5173'
+    depends_on:
+      - backend
+    # Frontend also receives readonly access to model volume (shared requirement).
+    volumes:
+      - ./backend/model:/app/model:ro
+    command: npm run dev -- --host 0.0.0.0 --port 5173
