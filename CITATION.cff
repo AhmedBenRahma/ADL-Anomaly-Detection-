@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "Deep Learning Autoencoders for ADL Anomaly Detection in Elderly Smart Homes"
+type: software
+authors:
+  - family-names: "Ben Rahma"
+    given-names: "Ahmed"
+  - family-names: "Abidi"
+    given-names: "Emna"
+repository-code: "https://github.com/AhmedBenRahma/ADL-Anomaly-Detection-"
+year: 2026
+keywords:
+  - ADL anomaly detection
+  - smart meter
+  - autoencoder
+  - TCN
+  - LSTM
+  - Transformer
+  - REFIT
+  - elderly monitoring
