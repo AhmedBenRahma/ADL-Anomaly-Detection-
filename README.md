@@ -530,6 +530,4 @@ Please cite the report and the dataset. GitHub's "Cite this repository" button r
 
 ---
 
-## 15. License
 
-<!-- TODO: choose a licence (for example MIT) and add a LICENSE file. The REFIT dataset is distributed under CC BY 4.0 and must be attributed separately. -->
